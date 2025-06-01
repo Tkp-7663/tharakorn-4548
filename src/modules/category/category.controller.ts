@@ -1,4 +1,10 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 
 @Controller('category')
-export class CategoryController {}
+export class CategoryController {
+    @Get()
+    findall() {
+        // return this.service.findAll();
+        return 'category list';
+    }
+}
