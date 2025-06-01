@@ -8,6 +8,7 @@ import { UsersModule } from './modules/users/users.module';
 import { CategorysModule } from './modules/category/category.module';
 import { GoalsModule } from './modules/goals/goals.module';
 import { TransactionsModule } from './modules/transactions/transactions.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { TransactionsModule } from './modules/transactions/transactions.module';
     CategorysModule,
     GoalsModule,
     TransactionsModule,
+    AuthModule
   ],
   controllers: [AppController],
   providers: [AppService],
