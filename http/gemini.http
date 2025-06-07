@@ -1,0 +1,16 @@
+@GEMINI_API_KEY = AIzaSyAJ9A2ouZJ6YGzmieA2mHX2XmyxwSFPF70
+
+POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={{GEMINI_API_KEY}}
+Content-Type: application/json
+
+{
+    "contents": [
+      {
+        "parts": [
+          {
+            "text": "หวัดดี น้องบ่าว"
+          }
+        ]
+      }
+    ]
+}
